@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="title_home">Home</string>
+    <string name="title_detail">Detail</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="find_user">Find Github user by username...</string>
+</resources>
