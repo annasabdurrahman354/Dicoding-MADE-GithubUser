@@ -19,10 +19,15 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -32,6 +37,16 @@ android {
     }
     buildFeatures {
         viewBinding true
+    }
+
+    defaultConfig {
+        buildConfigField("String", "CERT1", "\"sha256/uyPYgclc5Jt69vKu92vci6etcBDY8UNTyrHQZJpVoZY=\"")
+        buildConfigField("String", "CERT2", "\"sha256/e0IRz5Tio3GA1Xs4fUVWmH1xHDiH2dMbVtCBSkOIdqM=\"")
+        buildConfigField("String", "CERT3", "\"sha256/r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=\"")
+        buildConfigField("String", "PASSPHRASE", "\"b650046bf6\"")
+        buildConfigField("String", "API", "\"https://api.github.com\"")
+        buildConfigField("String", "HOST", "\"api.github.com\"")
+        buildConfigField("String", "TOKEN", "\"token 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\"")
     }
 }
 
@@ -49,6 +64,9 @@ dependencies {
     implementation "androidx.room:room-runtime:2.4.3"
     kapt "androidx.room:room-compiler:2.4.3"
     androidTestImplementation "androidx.room:room-testing:2.4.3"
+
+    implementation "net.zetetic:android-database-sqlcipher:4.4.0"
+    implementation "androidx.sqlite:sqlite-ktx:2.2.0"
 
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"

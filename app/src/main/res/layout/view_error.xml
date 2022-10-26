@@ -11,7 +11,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
-        android:text="Oops..something went wrong!"
+        android:text="@string/oops_something_went_wrong"
         android:textSize="18sp" />
 
 </RelativeLayout>

@@ -12,7 +12,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
@@ -22,7 +22,8 @@
         app:ensureMinTouchTargetSize="true"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:focusable="true" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -59,7 +60,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -74,18 +75,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Name"
+                        android:text="@string/name"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/txtUsername"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif"
-                        android:text="Username"
+                        android:text="@string/username"
                         android:textColor="#DEF6F0" />
                 </LinearLayout>
 
@@ -96,7 +97,7 @@
                     android:layout_marginBottom="4dp"
                     android:drawablePadding="3dp"
                     android:gravity="center_vertical"
-                    android:text="No Information"
+                    android:text="@string/no_information"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
                     app:drawableStartCompat="@drawable/ic_location"
@@ -108,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:drawablePadding="4dp"
                     android:gravity="center_vertical"
-                    android:text="No Information"
+                    android:text="@string/no_information"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
                     app:drawableStartCompat="@drawable/ic_company"
@@ -184,14 +185,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Follower"
+                        android:text="@string/follower"
                         android:textColor="@android:color/black" />
 
                     <TextView
                         android:id="@+id/tvFollowers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="@string/str_0"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -208,14 +209,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Following"
+                        android:text="@string/following"
                         android:textColor="@android:color/black" />
 
                     <TextView
                         android:id="@+id/tvFollowing"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="@string/str_0"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -230,7 +231,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coming soon...."
+        android:text="@string/coming_soon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

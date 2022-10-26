@@ -3,5 +3,14 @@
     <string name="title_home">Home</string>
     <string name="title_detail">Detail</string>
     <string name="title_favorite">Favorite</string>
-    <string name="find_user">Find Github user by username...</string>
+    <string name="find_user">Find Github user by username…</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="no_information">No Information</string>
+    <string name="follower">Follower</string>
+    <string name="str_0">0</string>
+    <string name="following">Following</string>
+    <string name="coming_soon">Coming soon....</string>
+    <string name="it_s_too_quite_here">It\'s too quite here...</string>
+    <string name="oops_something_went_wrong">Oops..something went wrong!</string>
 </resources>

@@ -18,7 +18,6 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val homeViewModel: HomeViewModel by viewModel()
     private val binding get() = _binding!!
-    private lateinit var userAdapter: UserAdapter
 
     companion object {
         const val USERNAME = "USERNAME"
@@ -42,7 +41,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         if (activity != null) {
-            userAdapter = UserAdapter()
+            val userAdapter = UserAdapter()
             userAdapter.onItemClick = { selectedData ->
                 val bundle = Bundle()
                 bundle.putParcelable(USERNAME, selectedData)

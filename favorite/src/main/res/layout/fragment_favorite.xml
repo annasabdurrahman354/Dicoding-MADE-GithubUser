@@ -32,7 +32,7 @@
             android:layout_marginTop="4dp"
             android:fontFamily="@font/poppins_light"
             android:gravity="center"
-            android:text="It's too quite here..."
+            android:text="@string/it_s_too_quite_here"
             android:textSize="18sp" />
     </RelativeLayout>
 
