@@ -17,9 +17,10 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ListViewHolder>() {
 
     fun setData(newListData: List<User>?) {
         if (newListData == null) return
+        notifyItemRangeRemoved(0, listData.size)
         listData.clear()
         listData.addAll(newListData)
-        notifyDataSetChanged()
+        notifyItemRangeInserted(0,listData.size)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
